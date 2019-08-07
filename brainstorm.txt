@@ -1,0 +1,20 @@
+Part One — Player
+    1 Differentiate b/w player objects: Players will have an ID of "Player 1" or "Player 2"
+    2 If going against the computer, the ID is randomly set || when player selects "Start Game" the player
+      automatically is set ID of P1
+    3 Tokens will not be visible on canvas/screen until it's time to play them
+    4 Player will have access to enough tokens to fill the board && if there is no timeout on selecting
+      place to play token, the token count for each player will be the amount of spaces on the board/2
+    5 I could store the tokens as a property of the Player, and each time a token is played, I could have
+      the browser check the token property and record how many tokens the Player has left
+    6 The tokens will differ visually by color | The color of the token will match the color of the Player
+    7 isTurn can be a property set to a value of true when it's the Player's turn, then a method of the
+      Player can change the value of the isTurn property to false after each play
+Part Two — Token
+    1 Differentiate b/w tokens via color | red or black???
+        * If Player ID is something like "Red", then token can have matching??? ID
+    2 Tokens can have a property called player that starts as null, but then links to Player
+      on game init
+    3 A token can have an isPlayed property that starts as false and then changes to true
+        * Also an event listener can be added to it so that when the (↓) is pressed while it is **active**
+          a function changes its isPlayed property to true 
