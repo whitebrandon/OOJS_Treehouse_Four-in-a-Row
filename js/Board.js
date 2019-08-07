@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 class Board {
     constructor () {
@@ -25,12 +25,12 @@ class Board {
         return spaces;
     }
     /**
-     * 
+     * Draws associated SVG spaces for all game spaces.
      */
     drawHTMLBoard () {
         for (let column of this.spaces) {
             for (let space of column) {
-                space.drawSVGSPace();
+                space.drawSVGSpace();
             }
         }
     }
