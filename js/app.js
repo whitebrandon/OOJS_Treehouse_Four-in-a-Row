@@ -9,3 +9,10 @@ document.getElementById("begin-game").addEventListener('click', function () {
     this.style.display = 'none';
     document.getElementById('play-area').style.opacity = "1";
 });
+
+/**
+ * Listens for keydown event
+ */
+document.addEventListener('keydown', function (event) {
+    game.handleKeydown(event);
+})
